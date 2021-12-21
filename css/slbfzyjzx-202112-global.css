@@ -98,6 +98,7 @@ img {
 }
 
 .nav .nav-child {
+    position: relative;
     float: left;
     text-align: center;
     font-size: 19px;
@@ -118,6 +119,43 @@ img {
     background-image: url(../img/slfzyjzx-202112-navicon.png);
     margin-top: -2px;
     vertical-align: middle;
+}
+
+.nav .nav-child.more:hover {
+    color: #ef942f;
+}
+
+.nav .nav-child.more:hover:after {
+    background-image: url(../img/slfzyjzx-202112-navicon2.png);
+}
+
+.nav-child-c {
+    border-top: 3px solid #ef942f;
+    text-align: center;
+    font-size: 18px;
+    padding: 20px 0;
+}
+
+.nav-child-c p {
+    margin: 0;
+}
+
+.nav-child-c p:hover {
+    color: #326db6;
+}
+
+.nav-child-c p+p {
+    margin-top: 28px;
+}
+
+.webui-popover-restyle {
+    border-radius: initial;
+    padding: 0;
+    border: none;
+}
+
+.webui-popover-restyle .webui-popover-content>div:first-child {
+    width: 100%;
 }
 
 .search-input {
@@ -233,7 +271,7 @@ img {
 
 .roll-time {
     color: #999999;
-    margin-right: 12px;
+    /* margin-right: 12px; */
 }
 
 .roll-title {
@@ -256,6 +294,16 @@ img {
     background-color: #ef942f;
     text-align: center;
     line-height: 26px;
+}
+
+.infoList a:hover {
+    text-decoration: underline;
+    text-decoration-color: #326db6;
+}
+
+.infoList a:hover .roll-time,
+.infoList a:hover .roll-title {
+    color: #326db6;
 }
 
 

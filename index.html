@@ -8,144 +8,196 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/jquery.webui-popover.css">
     <link rel="stylesheet" href="css/slbfzyjzx-202112-global.css">
     <title>水利部发展研究中心</title>
 </head>
 
 <body>
-    <header>
-        <div class="header-top">
-            <div class="center-block-1200">
-                <span id="time"></span>
-                <span class="fr header-link">
+    <div class="">
+        <header>
+            <div class="header-top hidden-xs">
+                <div class="center-block-1200">
+                    <span id="time"></span>
+                    <span class="fr header-link">
                     <a href="" title="EN">EN</a><a href=""><img src="img/slfzyjzx-202112-emailicon.png" alt="邮件" title="邮件"></a><a href="" title="内网">内网</a><a href="" title="水利文献信息系统">水利文献信息系统</a>
                 </span>
+                </div>
+            </div>
+            <div class="header-bottom">
+                <div class="center-block-1200 clearfix">
+                    <div class="fl logo">
+                        <a href=""><img src="img/slfzyjzx-202112-pclogo.png" alt="水利部发展研究中心" title="水利部发展研究中心"></a>
+                    </div>
+                    <div class="fr">
+                        <nav class="nav">
+                            <div class="nav-child more pop-zh1">
+                                <a>组织机构</a>
+                            </div>
+                            <div class="nav-child more pop-zh2">
+                                <a>学术研究</a>
+                            </div>
+                            <div class="nav-child">
+                                <a href="">党建工作</a>
+                            </div>
+                            <div class="nav-child more pop-zh3">
+                                <a>学术组织</a>
+                            </div>
+                            <div class="nav-child">
+                                <a href="">专题</a>
+                            </div>
+                        </nav>
+                        <div id="pop-zh1" style="display:none;">
+                            <div class="nav-child-c">
+                                <p>
+                                    <a href="">专家观点</a>
+                                </p>
+                                <p>
+                                    <a href="">参阅报告</a>
+                                </p>
+                                <p>
+                                    <a href="">研究动态</a>
+                                </p>
+                                <p>
+                                    <a href="">他山之石</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div id="pop-zh2" style="display:none;">
+                            <div class="nav-child-c">
+                                <p>
+                                    <a href="">专家2观点</a>
+                                </p>
+                                <p>
+                                    <a href="">参阅2报告</a>
+                                </p>
+                                <p>
+                                    <a href="">研究2动态</a>
+                                </p>
+                                <p>
+                                    <a href="">他山2之石</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div id="pop-zh3" style="display:none;">
+                            <div class="nav-child-c">
+                                <p>
+                                    <a href="">专家3观点</a>
+                                </p>
+                                <p>
+                                    <a href="">参阅报告</a>
+                                </p>
+                                <p>
+                                    <a href="">研究动态</a>
+                                </p>
+                                <p>
+                                    <a href="">他山之石</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="search-input">
+                            <form action="" method="get">
+                                <input type="text" value="" placeholder="" class="input-text">
+                                <input type="image" class="imgsubmit fr" src="img/slfzyjzx-202112-searchicon.png" alt="" title="搜索">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="big-banner">
+            <div class="slick-mod">
+                <div class="slick-item">
+                    <a>
+                        <div style="background: url(img/demo.jpg) center center no-repeat;background-size: cover;"></div>
+                    </a>
+                </div>
+                <div class="slick-item">
+                    <a>
+                        <div style="background: url(img/demo.jpg) center center no-repeat;background-size: cover;"></div>
+                    </a>
+                </div>
+                <div class="slick-item">
+                    <a>
+                        <div style="background: url(img/demo.jpg) center center no-repeat;background-size: cover;"></div>
+                    </a>
+                </div>
             </div>
         </div>
-        <div class="header-bottom">
-            <div class="center-block-1200 clearfix">
-                <div class="fl logo">
-                    <a href=""><img src="img/slfzyjzx-202112-pclogo.png" alt="水利部发展研究中心" title="水利部发展研究中心"></a>
-                </div>
-                <div class="fr">
-                    <nav class="nav">
-                        <div class="nav-child more">
-                            <a>组织机构</a>
-                        </div>
-                        <div class="nav-child more">
-                            <a>学术研究</a>
-                        </div>
-                        <div class="nav-child">
-                            <a href="">党建工作</a>
-                        </div>
-                        <div class="nav-child more">
-                            <a>学术组织</a>
-                        </div>
-                        <div class="nav-child">
-                            <a href="">专题</a>
-                        </div>
-                    </nav>
-                    <div class="search-input">
-                        <form action="" method="get">
-                            <input type="text" value="" placeholder="" class="input-text">
-                            <input type="image" class="imgsubmit fr" src="img/slfzyjzx-202112-searchicon.png" alt="" title="搜索">
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-    <div class="big-banner">
-        <div class="slick-mod">
-            <div class="slick-item">
-                <a>
-                    <div style="background: url(img/demo.jpg) center center no-repeat;background-size: cover;"></div>
-                </a>
-            </div>
-            <div class="slick-item">
-                <a>
-                    <div style="background: url(img/demo.jpg) center center no-repeat;background-size: cover;"></div>
-                </a>
-            </div>
-            <div class="slick-item">
-                <a>
-                    <div style="background: url(img/demo.jpg) center center no-repeat;background-size: cover;"></div>
-                </a>
-            </div>
-        </div>
-    </div>
-    <main>
-        <section class="rolltext-bg">
-            <div class="center-block-1200">
-                <div class="txtMarquee-left">
-                    <img class="rolltext-laba" src="img/slfzyjzx-202112-labalicon.png" alt="">
-                    <div class="rolltext-more">+</div>
-                    <div class="bd">
-                        <ul class="infoList">
-                            <li>
-                                <a href="" target="_blank"><span class="roll-time">[2021-08-13]</span><span class="roll-title">2021(第五届)城市防洪排涝国际论坛将延期举办</span></a>
-                            </li>
-                            <li>
-                                <a href="" target="_blank"><span class="roll-time">[2021-08-09]</span><span class="roll-title">水利部发展研究中心2021年第二批公开招聘工作人员拟聘人员公示</span></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section>
-            <div class="center-block-1200 clearfix">
-                <div class="fl w800">
-                    <div class="slick-mod2">
-                        <div class="slick-item">
-                            <a href="">
-                                <img src="img/demo2.jpg" alt="">
-                                <div class="tit1">2020年国家网络安全宣传周2020年国家网络安全宣传周2020年国家网络安全宣传周2020年国家网络安全宣传周2020年国家网络安全宣传周</div>
-                            </a>
-                        </div>
-                        <div class="slick-item">
-                            <a href="">
-                                <img src="img/demo2.jpg" alt="">
-                                <div class="tit1">网信工作视频会议在京召开</div>
-                            </a>
-                        </div>
-                        <div class="slick-item">
-                            <a href="">
-                                <img src="img/demo2.jpg" alt="">
-                                <div class="tit1">网信工作视频会议在京召开</div>
-                            </a>
+        <main>
+            <section class="rolltext-bg">
+                <div class="center-block-1200">
+                    <div class="txtMarquee-left">
+                        <img class="rolltext-laba" src="img/slfzyjzx-202112-labalicon.png" alt="">
+                        <div class="rolltext-more">+</div>
+                        <div class="bd">
+                            <ul class="infoList">
+                                <li>
+                                    <a href="" target="_blank"><span class="roll-time">[2021-08-13]</span>&nbsp;&nbsp;<span class="roll-title">2021(第五届)城市防洪排涝国际论坛将延期举办</span></a>
+                                </li>
+                                <li>
+                                    <a href="" target="_blank"><span class="roll-time">[2021-08-09]</span>&nbsp;&nbsp;<span class="roll-title">水利部发展研究中心2021年第二批公开招聘工作人员拟聘人员公示</span></a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-                <div class="fr w370">
-                    <div class="yw-container">
-                        <div class="yw-title"><span>要闻</span><span class="fr"><a href="">更多+</a></span></div>
-                        <ul class="list">
-                            <li><a href="" title="">习近平主持召开中央全面深化改革委员会第习近平主持召开中央全面深化改革委员会第</a></li>
-                            <li><a href="" title="">新时代中国为造福世界作出新贡献</a></li>
-                            <li><a href="" title="">坚守初心本色 用心描绘时代画卷</a></li>
-                            <li><a href="" title="">第四届进博会累计意向成交707.2亿美元</a></li>
-                            <li><a href="" title="">我国前10月货物贸易进出口突破30万亿元</a></li>
-                        </ul>
-                        <ul class="list">
-                            <li><a href="" title="">《人民日报》发表李国英部长署名文章：强...</a></li>
-                            <li><a href="" title="">吹响新时代强化流域治理管理的改革号角—水利...</a></li>
-                            <li><a href="" title="">大藤峡水利枢纽建设双鱼道保护流域水生态</a></li>
-                            <li><a href="" title="">坚定不移强化流域治理管理 推动新阶段水利高质...</a></li>
-                            <li><a href="" title="">黄河口湿地“健康” 黄河下游才“安全”</a></li>
-                        </ul>
+            </section>
+            <section>
+                <div class="center-block-1200 clearfix">
+                    <div class="fl w800">
+                        <div class="slick-mod2">
+                            <div class="slick-item">
+                                <a href="">
+                                    <img src="img/demo2.jpg" alt="">
+                                    <div class="tit1">2020年国家网络安全宣传周2020年国家网络安全宣传周2020年国家网络安全宣传周2020年国家网络安全宣传周2020年国家网络安全宣传周</div>
+                                </a>
+                            </div>
+                            <div class="slick-item">
+                                <a href="">
+                                    <img src="img/demo2.jpg" alt="">
+                                    <div class="tit1">网信工作视频会议在京召开</div>
+                                </a>
+                            </div>
+                            <div class="slick-item">
+                                <a href="">
+                                    <img src="img/demo2.jpg" alt="">
+                                    <div class="tit1">网信工作视频会议在京召开</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fr w370">
+                        <div class="yw-container">
+                            <div class="yw-title"><span>要闻</span><span class="fr"><a href="">更多+</a></span></div>
+                            <ul class="list">
+                                <li><a href="" title="">习近平主持召开中央全面深化改革委员会第习近平主持召开中央全面深化改革委员会第</a></li>
+                                <li><a href="" title="">新时代中国为造福世界作出新贡献</a></li>
+                                <li><a href="" title="">坚守初心本色 用心描绘时代画卷</a></li>
+                                <li><a href="" title="">第四届进博会累计意向成交707.2亿美元</a></li>
+                                <li><a href="" title="">我国前10月货物贸易进出口突破30万亿元</a></li>
+                            </ul>
+                            <ul class="list">
+                                <li><a href="" title="">《人民日报》发表李国英部长署名文章：强...</a></li>
+                                <li><a href="" title="">吹响新时代强化流域治理管理的改革号角—水利...</a></li>
+                                <li><a href="" title="">大藤峡水利枢纽建设双鱼道保护流域水生态</a></li>
+                                <li><a href="" title="">坚定不移强化流域治理管理 推动新阶段水利高质...</a></li>
+                                <li><a href="" title="">黄河口湿地“健康” 黄河下游才“安全”</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section class="bg1">
+            </section>
+            <section class="bg1">
 
-        </section>
-    </main>
-    <footer></footer>
+            </section>
+        </main>
+        <footer></footer>
+    </div>
     <script src="js/jquery-1.9.1.js"></script>
     <script src="js/slick.js"></script>
     <script src="js/jquery.SuperSlide.2.1.3.js"></script>
+    <script src="js/jquery.webui-popover.js"></script>
     <script src="js/slbfzyjzx-202112-global.js"></script>
     <script>
         $(document).ready(function() {
