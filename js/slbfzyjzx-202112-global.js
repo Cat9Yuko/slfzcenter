@@ -19,6 +19,16 @@ $(function() {
         arrow: false,
         offsetTop: 20
     }
+    var settings2 = {
+        placement: 'bottom',
+        trigger: 'hover',
+        width: 130,
+        muti: false,
+        closeable: false,
+        style: 'restyle',
+        padding: false,
+        arrow: true,
+    }
     var popzhcon1 = $('#pop-zh1').html();
     var popzhcon2 = $('#pop-zh2').html();
     var popzhcon3 = $('#pop-zh3').html();
@@ -38,4 +48,12 @@ $(function() {
         $('div.pop-zh3').webuiPopover('destroy').webuiPopover($.extend({}, settings, popzhset3));
     }
     initPopover();
+    if (window.width < 768) {
+        function initPopover() {
+            $('div.pop-zh1').webuiPopover('destroy').webuiPopover($.extend({}, settings2, popzhset1));
+            $('div.pop-zh2').webuiPopover('destroy').webuiPopover($.extend({}, settings2, popzhset2));
+            $('div.pop-zh3').webuiPopover('destroy').webuiPopover($.extend({}, settings2, popzhset3));
+        }
+        initPopover();
+    }
 });
