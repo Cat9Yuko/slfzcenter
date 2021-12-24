@@ -10,7 +10,7 @@ $("#time").html(time);
 $(function() {
     var settings = {
         placement: 'bottom',
-        trigger: 'hover',
+        trigger: 'click',
         width: 130,
         muti: false,
         closeable: false,
@@ -21,8 +21,18 @@ $(function() {
     }
     var settings2 = {
         placement: 'bottom',
-        trigger: 'hover',
-        width: 130,
+        trigger: 'click',
+        width: 'calc(100% - 28px)',
+        muti: false,
+        closeable: false,
+        style: 'restyle',
+        padding: false,
+        arrow: true,
+    }
+    var settings3 = {
+        placement: 'bottom-left',
+        trigger: 'click',
+        width: 'calc(100% - 28px)',
         muti: false,
         closeable: false,
         style: 'restyle',
@@ -47,13 +57,25 @@ $(function() {
         $('div.pop-zh2').webuiPopover('destroy').webuiPopover($.extend({}, settings, popzhset2));
         $('div.pop-zh3').webuiPopover('destroy').webuiPopover($.extend({}, settings, popzhset3));
     }
-    initPopover();
-    if (window.width < 768) {
-        function initPopover() {
-            $('div.pop-zh1').webuiPopover('destroy').webuiPopover($.extend({}, settings2, popzhset1));
-            $('div.pop-zh2').webuiPopover('destroy').webuiPopover($.extend({}, settings2, popzhset2));
-            $('div.pop-zh3').webuiPopover('destroy').webuiPopover($.extend({}, settings2, popzhset3));
-        }
+
+    function initPopover2() {
+        $('div.pop-zh1').webuiPopover('destroy').webuiPopover($.extend({}, settings2, popzhset1));
+        $('div.pop-zh2').webuiPopover('destroy').webuiPopover($.extend({}, settings3, popzhset2));
+        $('div.pop-zh3').webuiPopover('destroy').webuiPopover($.extend({}, settings2, popzhset3));
+    }
+
+    if ($(window).width() < 768) {
+
+        initPopover2();
+    } else {
         initPopover();
     }
+    $(window).resize(function() {
+        if ($(window).width() < 768) {
+
+            initPopover2();
+        } else {
+            initPopover();
+        }
+    });
 });
