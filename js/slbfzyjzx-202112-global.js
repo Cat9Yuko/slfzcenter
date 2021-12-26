@@ -78,4 +78,9 @@ $(function() {
             initPopover();
         }
     });
+
+    $(".yjdt-title").hover(function() {
+        $(this).addClass("act").siblings().removeClass("act");
+        $(".yjdt-imgs .yjdt-img").eq($(this).index()).addClass("act").siblings().removeClass("act");
+    })
 });
