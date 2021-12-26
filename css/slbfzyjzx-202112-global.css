@@ -133,7 +133,8 @@ img {
     vertical-align: middle;
 }
 
-.nav .nav-child.more:hover {
+.nav .nav-child.more:hover,
+.nav .nav-child:hover {
     color: #ef942f;
 }
 
@@ -419,6 +420,11 @@ section+section {
     padding: 15px 0;
 }
 
+.list a:hover {
+    color: #ef942f;
+    text-decoration: underline;
+}
+
 .yw-container .list+.list {
     border-top: 1px dashed #cccccc;
 }
@@ -438,6 +444,12 @@ section+section {
 section.bg1 {
     height: 550px;
     background: url(../img/slfzyjzx-202112-twlfbg.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+section.bg2 {
+    height: 550px;
+    background: url(../img/slfzyjzx-202112-twlfbg2.jpg) center center no-repeat;
     background-size: cover;
 }
 
@@ -463,6 +475,7 @@ section.bg1 {
     margin: 0;
     margin-top: 23px;
     margin-left: 52px;
+    font-weight: bold;
 }
 
 .chnl-title.b2 h3 {
@@ -552,6 +565,18 @@ section.bg1 {
 
 .word-list .list li+li {
     padding: 20px 0 0 0;
+}
+
+.word-list.twolist ul+ul {
+    margin-top: 40px;
+}
+
+.word-list.twolist .list li+li {
+    padding: 17px 0 0 0;
+}
+
+.word-list.twolist .list li:first-child span:first-child {
+    font-weight: bold;
 }
 
 .yjdt {
@@ -644,6 +669,77 @@ section.bg1 {
 
 .no-img .word-t .p2 {
     margin-top: 0;
+}
+
+.cbw-container {
+    margin-top: 27px;
+}
+
+.cbw-imglist {
+    width: 127px;
+    height: 166px;
+    background: url(../img/slfzyjzx-202112-cbwbg.png) right 0 bottom 0 no-repeat;
+}
+
+.cbw-imglist+.cbw-imglist {
+    margin-left: 22px;
+}
+
+.cbw-imglist img {
+    width: 120px;
+    height: 160px;
+}
+
+.jdjb-container {
+    margin-top: 27px;
+}
+
+footer {
+    height: 240px;
+    background-color: #326db6;
+    color: #e0e8ee;
+    font-size: 16px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.yqlj-container {
+    padding: 26px 0 28px 0;
+    border-bottom: 1px solid #5b8ac5;
+}
+
+.yqlj-container a,
+.lxwm-container p:first-child a {
+    padding: 0 23px;
+    color: #adc5e2;
+}
+
+.yqlj-container a+a,
+.lxwm-container p:first-child a+a {
+    border-left: 2px solid #cfdae7;
+}
+
+.lxwm-container p:first-child a:first-child {
+    padding-left: 0;
+}
+
+.lxwm-container {
+    padding-top: 33px;
+    color: #adc5e2;
+}
+
+.qrcode {
+    width: 120px;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+.qrcode p {
+    margin-top: 10px;
+    color: #adc5e2;
 }
 
 
